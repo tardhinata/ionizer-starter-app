@@ -158,7 +158,7 @@ angular.module('taufan.ionizer.app', ['ionic', 'taufan.ionizer.app.controllers',
       url: "/plugins/device",
       views: {
         'menuContent' :{
-          templateUrl: "templates/plugins/device.html",
+          templateUrl: "templates/cordova/device.html",
           controller: 'DeviceCtrl'
         }
       }
@@ -168,7 +168,7 @@ angular.module('taufan.ionizer.app', ['ionic', 'taufan.ionizer.app.controllers',
       url: "/plugins/notifications",
       views: {
         'menuContent' :{
-          templateUrl: "templates/plugins/notifications.html",
+          templateUrl: "templates/cordova/notifications.html",
           controller: 'NotificationsCtrl'
         }
       }
@@ -178,7 +178,7 @@ angular.module('taufan.ionizer.app', ['ionic', 'taufan.ionizer.app.controllers',
       url: "/plugins/barcodescanner",
       views: {
         'menuContent' :{
-          templateUrl: "templates/plugins/barcodescanner.html",
+          templateUrl: "templates/cordova/barcodescanner.html",
           controller: 'BarcodescannerCtrl'
         }
       }
