@@ -1,0 +1,19 @@
+<ion-view title="Products">
+    <ion-content class="has-header">
+        {{storage}}
+        <!-- 
+        Show the product based on array partititon per row 
+        partition=2 means we split the whole products array into 2 products per row
+        -->
+        <div class="row" ng-repeat="row in products | partition:2">
+            <div class="col" ng-repeat="product in row">
+                <a href="#/app/products/{{(($parent.$index*row.length)+$index)}}"><img ng-src="{{product.thumb}}" alt="{{product.title}}" /></a>
+                <a href="#/app/products/{{(($parent.$index*row.length)+$index)}}"><h2>{{product.title}}</h2></a>
+                <p ng-model="letterLimit">{{product.body | limitTo:letterLimit}}...</p>
+                <p class="tags"><i class="icon ion-ios7-pricetags"></i>
+                    <span ng-repeat="tag in product.tags">{{tag}}{{$last ? '' : ', '}}</span>
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

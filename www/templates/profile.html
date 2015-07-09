@@ -1,0 +1,22 @@
+<ion-view title="Profile">
+    <ion-content class="has-header">
+        
+        {{storage}}
+        
+        <div class="list">
+
+            <a class="item item-thumbnail-left" href="#/app/profile/{{$index}}" ng-repeat="member in profile">
+                <img ng-src="{{member.picture}}" alt="{{member.title}}">
+                
+                <h2>{{member.title}}</h2>
+                <p>{{member.subtitle}}</p>
+                <p><i class="icon ion-email"></i> {{member.email}}</p>
+                <p><i class="icon ion-social-linkedin"></i> {{member.linkedin}}</p>
+                <p><i class="icon ion-social-twitter"></i> {{member.twitter}}</p>
+
+            </a>
+
+        </div>
+
+    </ion-content>
+</ion-view>

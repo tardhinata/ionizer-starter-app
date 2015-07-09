@@ -1,0 +1,13 @@
+<ion-view title="{{news.title}}">
+    <ion-content class="has-header">
+
+        <img ng-src="{{news.picture}}" alt="{{news.title}}"/>
+        
+        <div class="padding">
+        <h2 class="title">{{news.title}}</h2>
+        <p>{{news.body}}</p>
+        <p><i class="icon ion-ios7-pricetags"></i> <span ng-repeat="tag in news.tags">{{tag}}{{$last ? '' : ', '}}</span></p>
+        </div>
+
+    </ion-content>
+</ion-view>
