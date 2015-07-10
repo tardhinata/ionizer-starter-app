@@ -7,18 +7,19 @@ Enjoy!! :)
 
 <H1>Features</H1>
 
-PhoneGap / Cordova Full Hybrid App using AngularJS + Ionic framework  
-Settings page to 
-	change the app theme 
-	save and reset setting
-	clear local storage
-Multiple Home / Grid Layouts 
-Push Notifications  
-Example of Asynchronous programming with "promise" to retrieve JSON Data
-Example of AngularJS Service (Factories) usage to retrieve the data for each app's page (Home Page, Menu, Map, Gallery, etc) 
-Example of Local storage implementation to store the app's data
-Example of Cordova plugin usage (Device info, Notification plugin, Barcode reader plugin)
-Google Maps integration
+1. PhoneGap / Cordova Full Hybrid App using AngularJS + Ionic framework  
+2. Settings page to 
+	1. Change the app theme 
+	2. Save and reset setting
+	3. Clear local storage
+3. Multiple Home / Grid Layouts 
+4. Push Notifications
+5. Example of Asynchronous programming with "promise" to retrieve JSON Data
+6. Example of AngularJS Service (Factories) usage to retrieve the data for each app's page (Home Page, Menu, Map, Gallery, etc) 
+7. Example of Local storage implementation to store the app's data
+8. Example of Cordova plugin usage (Device info, Notification plugin, Barcode reader plugin)
+9. Google Maps integration
+10. Example of many ionic user controls
 
 <H1> Capture </H1> 
 
