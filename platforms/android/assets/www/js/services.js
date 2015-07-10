@@ -4,7 +4,7 @@ angular.module('taufan.ionizer.app.services', ['ionic'])
 .factory('IonizerService', function($q, $ionicPlatform, $ionicLoading, $cordovaLocalNotification, $cordovaVibration) {
     var service = {};
 
-    service.message = function(msg) {
+    service.sendNotification = function(msg) {
         var deferred = $q.defer();
         //send a notification
         $ionicPlatform.ready(function() {
@@ -17,7 +17,7 @@ angular.module('taufan.ionizer.app.services', ['ionic'])
 
     service.showLoading = function() {
         $ionicLoading.show({
-            template: '<i class="icon ion-loading-c"></i>Loading..',
+            template: '<i class="icon ion-loading-c"></i> Loading..',
             showBackdrop: false,
             showDelay: 10
         });

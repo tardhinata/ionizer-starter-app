@@ -163,12 +163,12 @@ angular.module('taufan.ionizer.app.controllers', [])
 })
 
 // Notifications Controller
-.controller('NotificationsCtrl', function($scope, Notification) {
+.controller('NotificationsCtrl', function($scope, IonizerService) {
 
     $scope.notificationMessage = "This is notification message";
 
     $scope.startNotify = function() {
-        Notification.message($scope.notificationMessage);
+        IonizerService.sendNotification($scope.notificationMessage);
     }; 
 
 })

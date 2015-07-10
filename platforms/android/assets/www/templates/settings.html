@@ -1,101 +1,91 @@
 <ion-view title="Settings">
     <ion-content class="has-header">
-        
         <div class="item item-divider">Theme</div>
-
-        <ul class="list list-{{appTheme}}"> 
+        <ul class="list list-{{appTheme}}">
             <li>
                 <ion-radio name="theme" ng-model="settings.theme" ng-value="'assertive'" ng-change="changeTheme(theme)">
-                <button class="button button-small button-assertive button-full">Assertive</button> 
+                    <button class="button button-small button-assertive button-full">Assertive</button>
                 </ion-radio>
             </li>
             <li>
                 <ion-radio name="theme" ng-model="settings.theme" ng-value="'positive'" ng-change="changeTheme(theme)">
-                <button class="button button-small button-positive button-full">Positive</button> 
+                    <button class="button button-small button-positive button-full">Positive</button>
                 </ion-radio>
             </li>
             <li>
                 <ion-radio name="theme" ng-model="settings.theme" ng-value="'royal'" ng-change="changeTheme(theme)">
-                <button class="button button-small button-royal button-full">Royal</button> 
+                    <button class="button button-small button-royal button-full">Royal</button>
                 </ion-radio>
             </li>
             <li>
                 <ion-radio name="theme" ng-model="settings.theme" ng-value="'light'" ng-change="changeTheme(theme)">
-                <button class="button button-small button-light button-full">Light</button> 
+                    <button class="button button-small button-light button-full">Light</button>
                 </ion-radio>
             </li>
             <li>
                 <ion-radio name="theme" ng-model="settings.theme" ng-value="'dark'" ng-change="changeTheme(theme)">
-                <button class="button button-small button-dark button-full">Dark</button> 
+                    <button class="button button-small button-dark button-full">Dark</button>
                 </ion-radio>
             </li>
             <li>
                 <ion-radio name="theme" ng-model="settings.theme" ng-value="'stable'" ng-change="changeTheme(theme)">
-                <button class="button button-small button-stable button-full">Stable</button>
+                    <button class="button button-small button-stable button-full">Stable</button>
                 </ion-radio>
-            </li> 
-        </ul> 
-
+            </li>
+        </ul>
         <div class="item item-divider">Language (dummy) </div>
         <div class="list">
-            <div><ion-radio name="lang" ng-model="settings.language" ng-value="'en'" ng-click="changeLanguage('en')">English</ion-radio></div>
-            <div><ion-radio name="lang" ng-model="settings.language" ng-value="'de'" ng-click="changeLanguage('de')">Deutsch</ion-radio></div>
-            <div><ion-radio name="lang" ng-model="settings.language" ng-value="'it'" ng-click="changeLanguage('it')">Italiano</ion-radio></div> 
+            <div>
+                <ion-radio name="lang" ng-model="settings.language" ng-value="'en'" ng-click="changeLanguage('en')">English</ion-radio>
+            </div>
+            <div>
+                <ion-radio name="lang" ng-model="settings.language" ng-value="'de'" ng-click="changeLanguage('de')">Deutsch</ion-radio>
+            </div>
+            <div>
+                <ion-radio name="lang" ng-model="settings.language" ng-value="'it'" ng-click="changeLanguage('it')">Italiano</ion-radio>
+            </div>
         </div>
-
         <div class="item item-divider">Options</div>
         <ul class="list">
-            
             <li ng-repeat="setting in settings.options">
-            <ion-toggle ng-model="setting.checked" ng-checked="setting.checked" toggle-class="toggle-{{appTheme}}">{{setting.name}}</ion-toggle>
+                <ion-toggle ng-model="setting.checked" ng-checked="setting.checked" toggle-class="toggle-{{appTheme}}">{{setting.name}}</ion-toggle>
             </li>
-
-        </ul> 
-        
+        </ul>
         <div class="item item-divider">Range Selector</div>
         <div class="item range range-{{appTheme}}">
-        <i class="icon ion-ios7-sunny-outline"></i>
-        <input type="range" min="0" max="100" value="{{settings.range}}" ng-model="settings.range">
-        <i class="icon ion-ios7-sunny"></i>
+            <i class="icon ion-ios7-sunny-outline"></i>
+            <input type="range" min="0" max="100" value="{{settings.range}}" ng-model="settings.range">
+            <i class="icon ion-ios7-sunny"></i>
         </div>
-        
         <div class="item item-divider">Reset Settings</div>
         <div class="list">
-            
             <div class="item item-button-right">
-            Reset All Settings 
-            <button class="button" ng-click="resetSettings()">
-            Reset
-            </button>
+                Reset All Settings
+                <button class="button" ng-click="resetSettings()">
+                    Reset
+                </button>
             </div>
-
         </div>
-        
         <div class="item item-divider">Local Storage</div>
         <div class="list">
-            
             <div class="item item-button-right">
-            News
-            <button class="button" ng-click="resetNewsStorage()">
-            Clear
-            </button>
+                News
+                <button class="button" ng-click="resetNewsStorage()">
+                    Clear
+                </button>
             </div>
-            
             <div class="item item-button-right">
-            Products
-            <button class="button" ng-click="resetProductsStorage()">
-            Clear
-            </button>
+                Products
+                <button class="button" ng-click="resetProductsStorage()">
+                    Clear
+                </button>
             </div>
-            
             <div class="item item-button-right">
-            Profile
-            <button class="button" ng-click="resetProfileStorage()">
-            Clear
-            </button>
-            </div> 
-
+                Profile
+                <button class="button" ng-click="resetProfileStorage()">
+                    Clear
+                </button>
+            </div>
         </div>
-
     </ion-content>
 </ion-view>
