@@ -1,0 +1,199 @@
+<ion-view title="Tabs">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <ion-tabs class="tabs-icon-only">
+
+            <!-- TAB 1 -->
+            
+            <ion-tab title="Home" icon-on="ion-ios7-home" icon-off="ion-ios7-home-outline">
+                <ion-scroll zooming="false" direction="y">
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            Ionic User Control Demonstration
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="item item-divider">Placeholder Labels</div>
+                        <label class="item item-input">
+                            <input type="text" placeholder="Enter Subject (Text)">
+                        </label>
+                        <label class="item item-input">
+                            <textarea placeholder="Enter Message (Textarea)"></textarea>
+                        </label>
+                        <div class="item item-divider">Inline Label</div>
+                        <label class="item item-input">
+                            <span class="input-label">Username:</span>
+                            <input type="text">
+                        </label>
+                        <div class="item item-divider">Range</div>
+                        <div class="item range range-{{appTheme}}">
+                            <i class="icon ion-ios7-sunny-outline"></i>
+                            <input type="range" name="volume" min="0" max="100" value="33">
+                            <i class="icon ion-ios7-sunny"></i>
+                        </div>
+                    </div>
+                    <div class="item item-divider">Checkbox</div>
+                    <ul class="list">
+                        <li>
+                            <ion-checkbox ng-checked="true" class="noborder">Checkbox Label</ion-checkbox>
+                        </li>
+                        <li>
+                            <ion-checkbox ng-checked="false" class="noborder">Checkbox Label</ion-checkbox>
+                        </li>
+                    </ul>
+                    <div class="item item-divider">Toggle</div>
+                    <ul class="list">
+                        <li>
+                            <ion-toggle ng-checked="true" toggle-class="toggle-{{appTheme}}" class="noborder">First Option</ion-toggle>
+                        </li>
+                        </li>
+                        <ion-toggle ng-checked="false" toggle-class="toggle-{{appTheme}}" class="noborder">Second Option</ion-toggle>
+                        </li>
+                    </ul>
+                    <div class="item item-divider">Radio Buttons</div>
+                    <ul class="list">
+                        <li>
+                            <ion-radio ng-model="choice" ng-value="A">Choose A</ion-radio>
+                        </li>
+                        <li>
+                            <ion-radio ng-model="choice" ng-value="B">Choose B</ion-radio>
+                        </li>
+                        <li>
+                            <ion-radio ng-model="choice" ng-value="C">Choose C</ion-radio>
+                        </li>
+                    </ul>
+                    <div class="item item-divider">Buttons</div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="button button-block button-{{appTheme}}">
+                                Block
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="button button-block button-outline button-{{appTheme}}">
+                                Outlined
+                            </button>
+                        </div>
+                        <div class="col">
+                            <a class="button button-block icon-right ion-chevron-right button-{{appTheme}}">Icon</a>
+                        </div>
+                    </div>
+                    <div class="button-bar padding">
+                        <a class="button">First</a>
+                        <a class="button">Second</a>
+                        <a class="button">Third</a>
+                    </div>
+            </ion-tab>
+
+            <!-- TAB 2 -->
+
+            <ion-tab title="Comments" icon-on="ion-ios7-chatboxes" icon-off="ion-ios7-chatboxes-outline">
+                <ion-scroll zooming="false" direction="y">
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            Ionic Grid Demonstration
+                        </div>
+                    </div>
+                    <div class="item item-divider">Evenly Spaced Columns</div>
+                    <div class="row">
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                    </div>
+                    <div class="item item-divider">Explicit Column Sizes</div>
+                    <div class="row">
+                        <div class="col col-50">.col.col-50</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-75">.col.col-75</div>
+                        <div class="col">.col</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">.col</div>
+                        <div class="col col-75">.col.col-75</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                    </div>
+                    <div class="item item-divider">Offset Columns</div>
+                    <div class="row">
+                        <div class="col col-33 col-offset-33">.col</div>
+                        <div class="col">.col</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33">.col</div>
+                        <div class="col col-33 col-offset-33">.col</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-33 col-offset-67">.col</div>
+                    </div>
+                    <div class="item item-divider">Vertically Align Columns</div>
+                    <div class="row">
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">1
+                            <br>2
+                            <br>3
+                            <br>4</div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-top">.col</div>
+                        <div class="col col-center">.col</div>
+                        <div class="col col-bottom">.col</div>
+                        <div class="col">1
+                            <br>2
+                            <br>3
+                            <br>4</div>
+                    </div>
+                    <div class="row row-top">
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">1
+                            <br>2
+                            <br>3
+                            <br>4</div>
+                    </div>
+                    <div class="row row-center">
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">1
+                            <br>2
+                            <br>3
+                            <br>4</div>
+                    </div>
+                    <div class="row row-bottom">
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">.col</div>
+                        <div class="col">1
+                            <br>2
+                            <br>3
+                            <br>4</div>
+                    </div>
+                </ion-scroll>
+            </ion-tab>
+
+            <!-- TAB 3 -->
+
+            <ion-tab title="Settings" icon-on="ion-ios7-gear" icon-off="ion-ios7-gear-outline">
+                <ion-scroll zooming="false" direction="y">
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            Blank page
+                        </div>
+                    </div>
+                </ion-scroll>
+            </ion-tab>
+        </ion-tabs>
+    </ion-content>
+</ion-view>
