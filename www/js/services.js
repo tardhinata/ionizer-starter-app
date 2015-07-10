@@ -17,7 +17,7 @@ angular.module('taufan.ionizer.app.services', ['ionic'])
 
     service.showLoading = function() {
         $ionicLoading.show({
-            template: '<i class="icon ion-loading-c"></i> Loading Data',
+            template: '<i class="icon ion-loading-c"></i> Loading..',
             showBackdrop: false,
             showDelay: 10
         });
@@ -36,7 +36,7 @@ angular.module('taufan.ionizer.app.services', ['ionic'])
 
     data.items = [{
         title: 'Products',
-        icon: 'ion-ios7-cart',
+        icon: 'ion-bag',
         note: 'Our Products',
         url: '#/app/products'
     }, {
