@@ -14,17 +14,6 @@ angular.module('taufan.ionizer.app', ['ionic', 'taufan.ionizer.app.controllers',
       StatusBar.styleDefault();
     }
 
-    // Open any external link with InAppBrowser Plugin
-    $(document).on('click', 'a[href^=http], a[href^=https]', function(e) {
-
-      e.preventDefault();
-      var $this = $(this);
-      var target = $this.data('inAppBrowser') || '_blank';
-
-      window.open($this.attr('href'), target);
-
-    });
-
   });
 
 })
