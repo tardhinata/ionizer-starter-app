@@ -81,19 +81,14 @@ angular.module('taufan.ionizer.app.storage', [])
                         id: 'en',
                         name: 'english',
                         icon: '-'
-                    },
-                    it: {
-                        id: 'it',
-                        name: 'italiano',
-                        icon: '-'
-                    },
+                    }, 
                     de: {
                         id: 'de',
                         name: 'deutsch',
                         icon: '-'
                     }
                 },
-            language: 'it',
+            language: 'en',
             theme: 'positive',
             range: 40
         };

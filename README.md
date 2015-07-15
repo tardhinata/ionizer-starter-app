@@ -5,6 +5,10 @@ This is an Ionic starter app that meant to give you example and initial code to 
 
 Enjoy!! :)
 
+<H1>Demo</H1>
+Download and Install and APK:
+http://ardhinata.com/projects/taufan.ionizer.app/taufan.ionizer.app.apk
+
 <H1>Features</H1>
 
 1. PhoneGap / Cordova Full Hybrid App using AngularJS + Ionic framework  

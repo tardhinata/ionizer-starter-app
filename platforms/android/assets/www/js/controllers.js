@@ -189,13 +189,18 @@ angular.module('taufan.ionizer.app.controllers', [])
 }) 
 
 // Seetings Controller
-.controller('SettingsCtrl', function($scope, $window, SettingsStorage, NewsStorage, ProductsStorage, ProfileStorage) {
+.controller('SettingsCtrl', function($scope, $window, $translate, SettingsStorage, NewsStorage, ProductsStorage, ProfileStorage) {
 
     $scope.settings = SettingsStorage.all();
 
-    $scope.changeTheme = function(theme) {
+    $scope.changeTheme = function() {
         $scope.appTheme = $scope.settings.theme;
         $window.location = '';
+    };
+
+    $scope.changeLanguage = function() { 
+        $scope.appLanguage = $scope.settings.language; 
+        $translate.use($scope.appLanguage); 
     };
 
     $scope.saveSettings = function() {
@@ -226,12 +231,14 @@ angular.module('taufan.ionizer.app.controllers', [])
 
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout, MenuData, $ionicActionSheet, SettingsStorage) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, MenuData, $ionicActionSheet, $translate, SettingsStorage) {
 
     $scope.items = MenuData.items;
 
     $scope.settings = SettingsStorage.all();
     $scope.appTheme = $scope.settings.theme;
+    $scope.appLanguage = $scope.settings.language;
+    $translate.use($scope.appLanguage); 
 
     // Form data for the login modal
     $scope.loginData = {};
